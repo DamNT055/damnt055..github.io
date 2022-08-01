@@ -1,18 +1,20 @@
 # Portfolio
 ---
-## Natural Language Processing
+## Convolutional Neural Network
 
-### CS224n: Natural Language Processing with Deep Learning
+### Realtime facial expression recognition using VGGnet	
 
-My complete implementation of assignments and projects in [***CS224n: Natural Language Processing with Deep Learning***](http://web.stanford.edu/class/cs224n/) by Stanford (Winter, 2019).
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/DamNT055/Facial-expression-recognition-Vgg)
 
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/CS224n-NLP-Solutions/tree/master/assignments/)
 
-**Neural Machine Translation:** An NMT system which translates texts from Spanish to English using a Bidirectional LSTM encoder for the source sentence and a Unidirectional LSTM Decoder with multiplicative attention for the target sentence ([GitHub](https://github.com/chriskhanhtran/CS224n-NLP-Solutions/tree/master/assignments/)).
+**Real-time Human Emotion Recognition** From facial expressions. It uses a lightweight deep Convolutional Neural Network. The model is highly efficient, and with small size, that can be deployed on devices equipped with limited computational resources. 
 
-**Dependency Parsing:** A Neural Transition-Based Dependency Parsing system with one-layer MLP ([GitHub](https://github.com/chriskhanhtran/CS224n-NLP-Assignments/tree/master/assignments/a3)).
+**Facial expression recognition (FER)** is the task of classifying the expressions on face images into various categories such as anger, fear, surprise, sadness, happiness and so on. FER is significant for human-computer interaction such as clinical practice and behavioral description.In this work, we propose a lightweight deep learning model based on VGGnet. The model used achieved an accuracy of 72% on the test data. The realtime analyzer assigns a suitable emoji for the current emotion.
 
-<center><img src="images/nlp.png"/></center>
+**VGG** stands for Visual Geometry Group; it is a standard deep Convolutional Neural Network (CNN) architecture with multiple layers. The “deep” refers to the number of layers with VGG-16 or VGG-19 consisting of 16 and 19 convolutional layers.
+
+**The VGG architecture** is the basis of ground-breaking object recognition models. Developed as a deep neural network, the VGGNet also surpasses baselines on many tasks and datasets beyond ImageNet. Moreover, it is now still one of the most popular image recognition architectures.
+<center><img src="https://github.com/DamNT055/Facial-expression-recognition-Vgg/blob/main/images/architecture.jpeg?raw=true"/></center>
 
 ---
 ### Detect Non-negative Airline Tweets: BERT for Sentiment Analysis
