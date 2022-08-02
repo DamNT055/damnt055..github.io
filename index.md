@@ -43,8 +43,12 @@ My complete implementation of assignments and projects in ***AIP391: AI Programm
 
 <div style="text-align: justify">The purpose of the project is to predict the market value of the property being sold. This program helps to find the starting price of a location based on location variables. Similarly, consider a situation in which a person needs to sell a house. By using a real estate pricing system, the seller will be able to determine what features he can add to the house so that the house can be sold at a higher price. Therefore, in both cases, we can be sure that the home price is good for both the buyer and the seller. Housing prices go up every year, so there is a need for a real estate forecasting system. Estimating the price of a house can help a developer determine the selling price of a house and can help clients set a reasonable time to buy a home.</div>
 <br>
-<center><img src="images/credit-risk-webapp.png"/></center>
+<center><img src="images/download.png"/></center>
 <br>
+
+**Linear regression analysis** is used to predict the value of a variable based on the value of another variable. The variable you want to predict is called the dependent variable. The variable you are using to predict the other variable's value is called the independent variable.
+
+**Gradient descent (GD)** is an iterative first-order optimisation algorithm used to find a local minimum/maximum of a given function. This method is commonly used in machine learning (ML) and deep learning(DL) to minimise a cost/loss function (e.g. in a linear regression)
 
 ---
 ### Kaggle Competition: Predict Ames House Price using Lasso, Ridge, XGBoost and LightGBM
