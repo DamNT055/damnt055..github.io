@@ -14,7 +14,10 @@ My complete implementation of assignments and projects in ***AIP391: AI Programm
 **VGG** stands for Visual Geometry Group; it is a standard deep Convolutional Neural Network (CNN) architecture with multiple layers. The “deep” refers to the number of layers with VGG-16 or VGG-19 consisting of 16 and 19 convolutional layers.
 
 **The VGG architecture** is the basis of ground-breaking object recognition models. Developed as a deep neural network, the VGGNet also surpasses baselines on many tasks and datasets beyond ImageNet. Moreover, it is now still one of the most popular image recognition architectures.
+
+<br>
 <center><img src="https://github.com/DamNT055/Facial-expression-recognition-Vgg/blob/main/images/architecture.jpeg?raw=true"/></center>
+<br>
 
 ---
 ### Squat counter & angle estimation using OpenCv and Mediapipe	
@@ -25,8 +28,9 @@ My complete implementation of assignments and projects in ***AIP391: AI Programm
 <div style="text-align: justify">A simple program using Mediapipe and OpenCV to count the number of Squat done and detect the crucial angles in Squat position. The main goal is to ensure proper form while doing Squat so as to achieve maximum effect. You may use the SquatCounter_Realtime in projects, changing the variables as necessary.
 </div>
 
+<br>
 <center><img src="https://github.com/DamNT055/SquatCounter/raw/main/images/yt_squat.gif"/></center>
-
+<br>
 ---
 ### Detect Food Trends from Facebook Posts: Co-occurence Matrix, Lift and PPMI
 
