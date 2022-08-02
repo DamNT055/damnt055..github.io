@@ -39,7 +39,7 @@ My complete implementation of assignments and projects in ***AIP391: AI Programm
 ### House Price predict using Linear Regression & Gradient Descent
 
 [![Run in Google Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-blue?logo=Google&logoColor=FDBA18)](https://drive.google.com/file/d/1tqjjYsYfm_FYFOCcgNJFBVhDge_-49Vu/view?usp=sharing)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/credit-risk-prediction)
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/DamNT055/House-predict-using-LR-GD)
 
 <div style="text-align: justify">The purpose of the project is to predict the market value of the property being sold. This program helps to find the starting price of a location based on location variables. Similarly, consider a situation in which a person needs to sell a house. By using a real estate pricing system, the seller will be able to determine what features he can add to the house so that the house can be sold at a higher price. Therefore, in both cases, we can be sure that the home price is good for both the buyer and the seller. Housing prices go up every year, so there is a need for a real estate forecasting system. Estimating the price of a house can help a developer determine the selling price of a house and can help clients set a reasonable time to buy a home.</div>
 <br>
@@ -53,7 +53,7 @@ My complete implementation of assignments and projects in ***AIP391: AI Programm
 ---
 ### MNIST Digits classification using PCA, SVM
 [![Run in Google Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-blue?logo=Google&logoColor=FDBA18)](https://drive.google.com/file/d/1WZ0ntqOfyH-oCf0l6dTqphlnl_w3Kqs3/view?usp=sharing)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/credit-risk-prediction)
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/DamNT055/House-predict-using-LR-GD)
 
 <div style="text-align: justify">As in today’s digital world optical character recognition technologies, use of auto-matic system for character recognition in physical document has increased. Andmany of the technologies are insufﬁcient for recognition and classify them correctlydue to different styles and handwritings. The main aim of a paper is to provide imple-mentation of classiﬁcation algorithms to recognize handwritten digits, i.e., 0–9. Thescope includes the elementary study of combination methods of different classiﬁersand calculates their performance on the basis of problem of handwritten digit recog-nition. Here, we are implementing PCA and SVM to recognize handwritten digit. This method able to reach accuracy rate of <b>92.71 %</b>.</div>
 <br>
