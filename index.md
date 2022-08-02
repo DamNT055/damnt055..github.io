@@ -36,7 +36,7 @@ My complete implementation of assignments and projects in ***AIP391: AI Programm
 
 ## Data Science
 
-### House predict using Linear Regression & Gradient Descent
+### House Price Predict using Linear Regression & Gradient Descent
 
 [![Run in Google Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-blue?logo=Google&logoColor=FDBA18)](https://drive.google.com/file/d/1tqjjYsYfm_FYFOCcgNJFBVhDge_-49Vu/view?usp=sharing)
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/credit-risk-prediction)
