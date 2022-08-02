@@ -1,15 +1,15 @@
 # Portfolio
 ---
-## Convolutional Neural Network
+## Computer Vision
 
-### Realtime facial expression recognition using VGGnet	
-
+### Facial Expression Recognition using Deep Learning	
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/DamNT055/Facial-expression-recognition-Vgg)
 
+My complete implementation of assignments and projects in ***AIP391: AI Programming Project*** by FPTU (Summer 2022).
+
+**Facial expression recognition(FER):** is the task of classifying the expressions on face images into various categories such as anger, fear, surprise, sadness, happiness and so on. FER is significant for human-computer interaction such as clinical practice and behavioral description.In this work, we propose a lightweight deep learning model based on VGGnet. The model used achieved an accuracy of 72% on the test data. The realtime analyzer assigns a suitable emoji for the current emotion.
 
 **Real-time Human Emotion Recognition** From facial expressions. It uses a lightweight deep Convolutional Neural Network. The model is highly efficient, and with small size, that can be deployed on devices equipped with limited computational resources. 
-
-**Facial expression recognition (FER)** is the task of classifying the expressions on face images into various categories such as anger, fear, surprise, sadness, happiness and so on. FER is significant for human-computer interaction such as clinical practice and behavioral description.In this work, we propose a lightweight deep learning model based on VGGnet. The model used achieved an accuracy of 72% on the test data. The realtime analyzer assigns a suitable emoji for the current emotion.
 
 **VGG** stands for Visual Geometry Group; it is a standard deep Convolutional Neural Network (CNN) architecture with multiple layers. The “deep” refers to the number of layers with VGG-16 or VGG-19 consisting of 16 and 19 convolutional layers.
 
@@ -25,7 +25,7 @@
 <div style="text-align: justify">A simple program using Mediapipe and OpenCV to count the number of Squat done and detect the crucial angles in Squat position. The main goal is to ensure proper form while doing Squat so as to achieve maximum effect. You may use the SquatCounter_Realtime in projects, changing the variables as necessary.
 </div>
 
-<center><img src="[images/BERT-classification.png](https://github.com/DamNT055/SquatCounter/raw/main/images/yt_squat.gif)"/></center>
+<center><img src="https://github.com/DamNT055/SquatCounter/raw/main/images/yt_squat.gif"/></center>
 
 ---
 ### Detect Food Trends from Facebook Posts: Co-occurence Matrix, Lift and PPMI
