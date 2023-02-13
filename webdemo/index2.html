@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home - Dat Tran</title>
+    <link rel="shortcut icon" href="https://htmlstream.com/preview/front-v4.3.1/favicon.ico">
+    <!-- Font -->
+    <link href="download/PRACTICE 1_files/css2" rel="stylesheet">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="download/PRACTICE 1_files/vendor.min.css">
+    <link rel="stylesheet" href="download/PRACTICE 1_files/bootstrap-icons.css">
+    <link rel="stylesheet" href="download/PRACTICE 1_files/theme.min.css">
+
+    <style class="fslightbox-styles">
+        .fslightbox-absoluted {
+            position: absolute;
+            top: 0;
+            left: 0
+        }
+
+        .fslightbox-fade-in {
+            animation: fslightbox-fade-in .3s cubic-bezier(0, 0, .7, 1)
+        }
+
+        .fslightbox-fade-out {
+            animation: fslightbox-fade-out .3s ease
+        }
+
+        .fslightbox-fade-in-strong {
+            animation: fslightbox-fade-in-strong .3s cubic-bezier(0, 0, .7, 1)
+        }
+
+        .fslightbox-fade-out-strong {
+            animation: fslightbox-fade-out-strong .3s ease
+        }
+
+        @keyframes fslightbox-fade-in {
+            from {
+                opacity: .65
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fslightbox-fade-out {
+            from {
+                opacity: .35
+            }
+
+            to {
+                opacity: 0
+            }
+        }
+
+        @keyframes fslightbox-fade-in-strong {
+            from {
+                opacity: .3
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fslightbox-fade-out-strong {
+            from {
+                opacity: 1
+            }
+
+            to {
+                opacity: 0
+            }
+        }
+
+        .fslightbox-cursor-grabbing {
+            cursor: grabbing
+        }
+
+        .fslightbox-full-dimension {
+            width: 100%;
+            height: 100%
+        }
+
+        .fslightbox-open {
+            overflow: hidden;
+            height: 100%
+        }
+
+        .fslightbox-flex-centered {
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .fslightbox-opacity-0 {
+            opacity: 0 !important
+        }
+
+        .fslightbox-opacity-1 {
+            opacity: 1 !important
+        }
+
+        .fslightbox-scrollbarfix {
+            padding-right: 17px
+        }
+
+        .fslightbox-transform-transition {
+            transition: transform .3s
+        }
+
+        .fslightbox-container {
+            font-family: Arial, sans-serif;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: linear-gradient(rgba(30, 30, 30, .9), #000 1810%);
+            touch-action: pinch-zoom;
+            z-index: 1000000000;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        .fslightbox-container * {
+            box-sizing: border-box
+        }
+
+        .fslightbox-svg-path {
+            transition: fill .15s ease;
+            fill: #ddd
+        }
+
+        .fslightbox-nav {
+            height: 45px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0
+        }
+
+        .fslightbox-slide-number-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 100%;
+            font-size: 15px;
+            color: #d7d7d7;
+            z-index: 0;
+            max-width: 55px;
+            text-align: left
+        }
+
+        .fslightbox-slide-number-container .fslightbox-flex-centered {
+            height: 100%
+        }
+
+        .fslightbox-slash {
+            display: block;
+            margin: 0 5px;
+            width: 1px;
+            height: 12px;
+            transform: rotate(15deg);
+            background: #fff
+        }
+
+        .fslightbox-toolbar {
+            position: absolute;
+            z-index: 3;
+            right: 0;
+            top: 0;
+            height: 100%;
+            display: flex;
+            background: rgba(35, 35, 35, .65)
+        }
+
+        .fslightbox-toolbar-button {
+            height: 100%;
+            width: 45px;
+            cursor: pointer
+        }
+
+        .fslightbox-toolbar-button:hover .fslightbox-svg-path {
+            fill: #fff
+        }
+
+        .fslightbox-slide-btn-container {
+            display: flex;
+            align-items: center;
+            padding: 12px 12px 12px 6px;
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+            z-index: 3;
+            transform: translateY(-50%)
+        }
+
+        @media (min-width:476px) {
+            .fslightbox-slide-btn-container {
+                padding: 22px 22px 22px 6px
+            }
+        }
+
+        @media (min-width:768px) {
+            .fslightbox-slide-btn-container {
+                padding: 30px 30px 30px 6px
+            }
+        }
+
+        .fslightbox-slide-btn-container:hover .fslightbox-svg-path {
+            fill: #f1f1f1
+        }
+
+        .fslightbox-slide-btn {
+            padding: 9px;
+            font-size: 26px;
+            background: rgba(35, 35, 35, .65)
+        }
+
+        @media (min-width:768px) {
+            .fslightbox-slide-btn {
+                padding: 10px
+            }
+        }
+
+        @media (min-width:1600px) {
+            .fslightbox-slide-btn {
+                padding: 11px
+            }
+        }
+
+        .fslightbox-slide-btn-container-previous {
+            left: 0
+        }
+
+        @media (max-width:475.99px) {
+            .fslightbox-slide-btn-container-previous {
+                padding-left: 3px
+            }
+        }
+
+        .fslightbox-slide-btn-container-next {
+            right: 0;
+            padding-left: 12px;
+            padding-right: 3px
+        }
+
+        @media (min-width:476px) {
+            .fslightbox-slide-btn-container-next {
+                padding-left: 22px
+            }
+        }
+
+        @media (min-width:768px) {
+            .fslightbox-slide-btn-container-next {
+                padding-left: 30px
+            }
+        }
+
+        @media (min-width:476px) {
+            .fslightbox-slide-btn-container-next {
+                padding-right: 6px
+            }
+        }
+
+        .fslightbox-down-event-detector {
+            position: absolute;
+            z-index: 1
+        }
+
+        .fslightbox-slide-swiping-hoverer {
+            z-index: 4
+        }
+
+        .fslightbox-invalid-file-wrapper {
+            font-size: 22px;
+            color: #eaebeb;
+            margin: auto
+        }
+
+        .fslightbox-video {
+            object-fit: cover
+        }
+
+        .fslightbox-youtube-iframe {
+            border: 0
+        }
+
+        .fslightbox-loader {
+            display: block;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 67px;
+            height: 67px
+        }
+
+        .fslightbox-loader div {
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            width: 54px;
+            height: 54px;
+            margin: 6px;
+            border: 5px solid;
+            border-color: #999 transparent transparent transparent;
+            border-radius: 50%;
+            animation: fslightbox-loader 1.2s cubic-bezier(.5, 0, .5, 1) infinite
+        }
+
+        .fslightbox-loader div:nth-child(1) {
+            animation-delay: -.45s
+        }
+
+        .fslightbox-loader div:nth-child(2) {
+            animation-delay: -.3s
+        }
+
+        .fslightbox-loader div:nth-child(3) {
+            animation-delay: -.15s
+        }
+
+        @keyframes fslightbox-loader {
+            0% {
+                transform: rotate(0)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        .fslightbox-source {
+            position: relative;
+            z-index: 2;
+            opacity: 0
+        }
+    </style>
+    <script src="download/PRACTICE 1_files/clipboard.min.js.download"></script>
+    <script src="https://kit.fontawesome.com/3ea0606e68.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="navbar navbar-expand-lg navbar-end navbar-light">
+
+        <div class="container">
+            <nav class="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
+                <!-- Default Logo -->
+                <a class="navbar-brand" href="#" aria-label="Front">
+                    <img class="navbar-brand-logo" src="download/PRACTICE 1_files/logo.svg" alt="Logo">
+                </a>
+                <!-- End Default Logo -->
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-default">
+                        <i class="bi-list"></i>
+                    </span>
+                    <span class="navbar-toggler-toggled">
+                        <i class="bi-x"></i>
+                    </span>
+                </button>
+                <!-- End Toggler -->
+
+                <!-- Collapse -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Trang chủ</a>
+                        </li>
+
+                        <!-- Dropdown -->
+                        <li class="hs-has-sub-menu nav-item">
+                            <a id="listingsDropdown" class="hs-mega-menu-invoker nav-link dropdown-toggle "
+                                href="https://htmlstream.com/preview/front-v4.3.1/demo-jobs/index.html#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Khóa học</a>
+                            <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated fadeOut"
+                                aria-labelledby="listingsDropdown"
+                                style="min-width: 14rem; animation-duration: 300ms; display: none;">
+                                <a class="dropdown-item " href="#">Khóa học
+                                    1</a>
+                                <a class="dropdown-item " href="#">Khóa học
+                                    2</a>
+                            </div>
+                        </li>
+                        <!-- End Dropdown -->
+
+                        <!-- Dropdown -->
+                        <li class="hs-has-sub-menu nav-item">
+                            <a id="pagesDropdown" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Bài viết</a>
+                            <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated fadeOut"
+                                aria-labelledby="listingsDropdown"
+                                style="min-width: 14rem; animation-duration: 300ms; display: none;">
+                                <a class="dropdown-item " href="#">Blog
+                                    1</a>
+                                <a class="dropdown-item " href="#">Blog
+                                    2</a>
+                                <a class="dropdown-item " href="#">Blog
+                                    3</a>
+                                <a class="dropdown-item " href="#">Blog
+                                    4</a>
+                            </div>
+                        </li>
+                        <!-- End Dropdown -->
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Về tôi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary btn-transition" href="#">Đăng ký
+                                ngay</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Collapse -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== END HEADER ========== -->
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="content" role="main">
+        <div class="container content-space-2">
+            <div class="row justify-content-md-between align-items-sm-center">
+                <div class="col-8 col-sm-6 col-md-5 mb-5 mb-sm-0">
+                    <img class="img-fluid"
+                        src="./download/Course _ Front - Multipurpose Responsive Template_files/oc-growing.svg"
+                        alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-6">
+                    <div class="mb-5">
+                        <h4 class="lead">Hello! mình là Đạt, đây là nơi giúp bạn</h4>
+                        <h1 class="display-4 mb-3">
+                            Khai phá
+                            <br>
+                            <span class="text-primary text-highlight-warning">
+                                <span class="js-typedjs" data-hs-typed-options="{
+                                    &quot;strings&quot;: [&quot;thành công.&quot;, &quot;tiềm năng.&quot;, &quot;kỹ năng.&quot;],
+                                    &quot;typeSpeed&quot;: 90,
+                                    &quot;loop&quot;: true,
+                                    &quot;backSpeed&quot;: 30,
+                                    &quot;backDelay&quot;: 2500
+                        }"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span>
+                            </span>
+                        </h1>
+                        <p class="lead">Bạn có thể để lại Email để nhận các hướng dẫn mới hoặc tham gia vào các chương
+                            trình Mentoring của mình để giúp bạn kinh doanh hoặc xây dựng thương hiệu trên các nền tảng
+                            mạng xã hội.</p>
+                    </div>
+
+                    <div class="d-grid d-md-flex gap-3 align-items-md-center">
+                        <a class="btn btn-primary" href="#">Nhận hướng dẫn từ mình <i
+                                class="fa-regular fa-paper-plane"></i></a>
+                    </div>
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+        </div>
+
+        <div class="container content-space-sm-2">
+            <!-- Title -->
+            <div class="w-md-75 text-center mx-md-auto mb-9">
+                <h2>Online Mentoring Programs 1:1</h2>
+                <p class="lead">Nếu bạn cần một Ekip đồng hành, giúp bạn nắm vững từ kiến thức nền tảng đến xây dựng cho
+                    bạn các kế hoạch cá nhân cụ thể thì đây sẽ là những chương trình dành cho bạn.</p>
+            </div>
+            <!-- End Title -->
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+                <div class="col mb-5">
+                    <!-- Card -->
+                    <div class="card card-bordered h-100">
+                        <!-- Card Pinned -->
+                        <div class="card-pinned">
+                            <img class="card-img-top"
+                                src="./download/Course _ Front - Multipurpose Responsive Template_files/card-6.svg"
+                                alt="Image Description">
+
+                            <div class="card-pinned-top-start">
+                                <small class="badge bg-success rounded-pill">Hot</small>
+                            </div>
+
+                            <div class="card-pinned-bottom-start">
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <!-- Rating -->
+                                    <div class="d-flex gap-1">
+                                        <img src="./download/Course _ Front - Multipurpose Responsive Template_files/star.svg"
+                                            alt="Review rating" width="16">
+                                        <img src="./download/Course _ Front - Multipurpose Responsive Template_files/star.svg"
+                                            alt="Review rating" width="16">
+                                        <img src="./download/Course _ Front - Multipurpose Responsive Template_files/star.svg"
+                                            alt="Review rating" width="16">
+                                        <img src="./download/Course _ Front - Multipurpose Responsive Template_files/star.svg"
+                                            alt="Review rating" width="16">
+                                        <img src="./download/Course _ Front - Multipurpose Responsive Template_files/star.svg"
+                                            alt="Review rating" width="16">
+                                    </div>
+                                    <!-- End Rating -->
+                                    <div class="ms-1">
+                                        <span class="fw-semibold text-white me-1">4.9</span>
+                                        <span class="text-white-70">(961 reviews)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card Pinned -->
+
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <small class="card-subtitle">Marketing</small>
+
+                            <div class="mb-3">
+                                <h3 class="card-title">
+                                    <a class="text-dark" href="#">Xây
+                                        dựng Tiktok Shop</a>
+                                </h3>
+                            </div>
+
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div class="avatar-group avatar-group-xs">
+                                        <a class="avatar avatar-xs avatar-circle" data-toggle="tooltip"
+                                            data-placement="top" title="Hanna Wolfe" href="#">
+                                            <img class="avatar-img"
+                                                src="./download/Course _ Front - Multipurpose Responsive Template_files/img7.jpg"
+                                                alt="Image Description">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- End Col -->
+
+                                <div class="col-auto">
+                                    <ul class="list-inline list-separator small ms-auto">
+                                        <li class="list-inline-item">
+                                            <i class="bi-book me-1"></i> 42 lessons
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="bi-clock me-1"></i> 31h 5m
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End Col -->
+                            </div>
+                            <!-- End Row -->
+                        </div>
+                        <!-- End Card Body -->
+
+                        <!-- Card Footer -->
+                        <div class="card-footer pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="me-2">
+                                    <span class="d-block text-muted small"><del>$179.99</del></span>
+                                    <h5 class="card-title">$129.99</h5>
+                                </div>
+                                <a class="btn btn-primary btn-sm btn-transition" href="#">Preview</a>
+                            </div>
+                        </div>
+                        <!-- End Card Footer -->
+                    </div>
+                    <!-- End Card -->
+                </div>
+
+                <div class="col mb-5">
+                    <!-- Card -->
+                    <div class="card card-bordered h-100">
+                        <!-- Card Pinned -->
+                        <div class="card-pinned">
+                            <img class="card-img-top"
+                                src="./download/Course _ Front - Multipurpose Responsive Template_files/card-15.svg"
+                                alt="Image Description">
+
+                            <div class="card-pinned-bottom-start">
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <!-- Rating -->
+                                    <div class="d-flex gap-1">
+                                        <img src="./download/Course _ Front - Multipurpose Responsive Template_files/star.svg"
+                                            alt="Review rating" width="16">
+                                        <img src="./download/Course _ Front - Multipurpose Responsive Template_files/star.svg"
+                                            alt="Review rating" width="16">
+                                        <img src="./download/Course _ Front - Multipurpose Responsive Template_files/star.svg"
+                                            alt="Review rating" width="16">
+                                        <img src="./download/Course _ Front - Multipurpose Responsive Template_files/star.svg"
+                                            alt="Review rating" width="16">
+                                        <img src="./download/Course _ Front - Multipurpose Responsive Template_files/star.svg"
+                                            alt="Review rating" width="16">
+                                    </div>
+                                    <!-- End Rating -->
+                                    <div class="ms-1">
+                                        <span class="fw-semibold text-white me-1">4.95</span>
+                                        <span class="text-white-70">(1k+ reviews)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card Pinned -->
+
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <small class="card-subtitle">Design</small>
+
+                            <div class="mb-3">
+                                <h3 class="card-title">
+                                    <a class="text-dark" href="#">Adobe Illustrator cho người mới bắt đầu</a>
+                                </h3>
+                            </div>
+
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div class="avatar-group avatar-group-xs">
+                                        <a class="avatar avatar-xs avatar-circle" data-toggle="tooltip"
+                                            data-placement="top" title="Emily Milda" href="#">
+                                            <img class="avatar-img"
+                                                src="./download/Course _ Front - Multipurpose Responsive Template_files/img8.jpg"
+                                                alt="Image Description">
+                                        </a>
+                                        <a class="avatar avatar-xs avatar-circle" data-toggle="tooltip"
+                                            data-placement="top" title="John O&#39;nolan" href="#">
+                                            <img class="avatar-img"
+                                                src="./download/Course _ Front - Multipurpose Responsive Template_files/img4.jpg"
+                                                alt="Image Description">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- End Col -->
+
+                                <div class="col-auto">
+                                    <ul class="list-inline list-separator small ms-auto">
+                                        <li class="list-inline-item">
+                                            <i class="bi-book me-1"></i> 8 lessons
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="bi-clock me-1"></i> 7h 59m
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End Col -->
+                            </div>
+                            <!-- End Row -->
+                        </div>
+                        <!-- End Card Body -->
+
+                        <!-- Card Footer -->
+                        <div class="card-footer pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="me-2">
+                                    <span class="d-block text-muted small"><del>$129.99</del></span>
+                                    <h5 class="card-title">$119.99</h5>
+                                </div>
+                                <a class="btn btn-primary btn-sm btn-transition" href="#">Preview</a>
+                            </div>
+                        </div>
+                        <!-- End Card Footer -->
+                    </div>
+                    <!-- End Card -->
+                </div>
+
+                <div class="col mb-5">
+                    <!-- Card -->
+                    <div class="card card-bordered h-100">
+                        <!-- Card Pinned -->
+                        <div class="card-pinned">
+                            <img class="card-img-top"
+                                src="./download/Course _ Front - Multipurpose Responsive Template_files/card-4.svg"
+                                alt="Image Description">
+
+                            <div class="card-pinned-bottom-start">
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <!-- Rating -->
+                                    <div class="d-flex gap-1">
+                                        <img src="./download/Course _ Front - Multipurpose Responsive Template_files/star.svg"
+                                            alt="Review rating" width="16">
+                                        <img src="./download/Course _ Front - Multipurpose Responsive Template_files/star.svg"
+                                            alt="Review rating" width="16">
+                                        <img src="./download/Course _ Front - Multipurpose Responsive Template_files/star.svg"
+                                            alt="Review rating" width="16">
+                                        <img src="./download/Course _ Front - Multipurpose Responsive Template_files/star.svg"
+                                            alt="Review rating" width="16">
+                                        <img src="./download/Course _ Front - Multipurpose Responsive Template_files/star-half.svg"
+                                            alt="Review rating" width="16">
+                                    </div>
+                                    <!-- End Rating -->
+                                    <div class="ms-1">
+                                        <span class="fw-semibold text-white me-1">4.64</span>
+                                        <span class="text-white-70">(723 reviews)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card Pinned -->
+
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <small class="card-subtitle">Business</small>
+
+                            <div class="mb-3">
+                                <h3 class="card-title">
+                                    <a class="text-dark" href="#">Đầu tư tài chính cơ bản</a>
+                                </h3>
+                            </div>
+
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div class="avatar-group avatar-group-xs">
+                                        <a class="avatar avatar-xs avatar-circle" data-toggle="tooltip"
+                                            data-placement="top" title="Hanna Wolfe"
+                                            href="https://htmlstream.com/preview/front-v4.3.1/demo-course/index.html#">
+                                            <img class="avatar-img"
+                                                src="./download/Course _ Front - Multipurpose Responsive Template_files/img7.jpg"
+                                                alt="Image Description">
+                                        </a>
+                                        <div class="avatar avatar-xs avatar-circle" data-toggle="tooltip"
+                                            data-placement="top" title="John O&#39;nolan">
+                                            <img class="avatar-img"
+                                                src="./download/Course _ Front - Multipurpose Responsive Template_files/img4.jpg"
+                                                alt="Image Description">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Col -->
+
+                                <div class="col-auto">
+                                    <ul class="list-inline list-separator small ms-auto">
+                                        <li class="list-inline-item">
+                                            <i class="bi-book me-1"></i> 5 lessons
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="bi-clock me-1"></i> 8h 12m
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End Col -->
+                            </div>
+                            <!-- End Row -->
+                        </div>
+                        <!-- End Card Body -->
+
+                        <!-- Card Footer -->
+                        <div class="card-footer pt-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="me-2">
+                                    <span class="d-block text-muted small"><del>$64.99</del></span>
+                                    <h5 class="card-title">$29.99</h5>
+                                </div>
+                                <a class="btn btn-primary btn-sm btn-transition"
+                                    href="https://htmlstream.com/preview/front-v4.3.1/demo-course/course-overview.html">Preview</a>
+                            </div>
+                        </div>
+                        <!-- End Card Footer -->
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+            <div class="text-center">
+                <a class="btn btn-link" href="#">Xem
+                    tất cả<i class="bi-chevron-right small ms-1"></i></a>
+            </div>
+        </div>
+
+        <div class="overflow-hidden">
+            <div class="container content-space-2 content-space-lg-3" style="padding-top: 0px!important;">
+                <div class="row justify-content-lg-between align-items-md-center">
+                    <div class="col-md-6 order-md-2 mb-10 mb-md-0">
+                        <div class="position-relative">
+                            <img class="img-fluid rounded-2" src="./download/percenter/profile.jpeg"
+                                alt="Image Description">
+
+                            <!-- SVG Shape -->
+                            <figure class="position-absolute top-0 start-0 zi-n1 mt-n7 ms-n7" style="width: 12rem;">
+                                <img class="img-fluid"
+                                    src="./download/Consulting _ Front - Multipurpose Responsive Template_files/dots-lg.svg"
+                                    alt="SVG">
+                            </figure>
+                            <!-- End SVG Shape -->
+
+                            <!-- SVG Shape -->
+                            <figure class="position-absolute bottom-0 end-0 zi-n1 mb-n7 me-n7" style="width: 12rem;">
+                                <img class="img-fluid"
+                                    src="./download/Consulting _ Front - Multipurpose Responsive Template_files/dots-lg.svg"
+                                    alt="SVG">
+                            </figure>
+                            <!-- End SVG Shape -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-5 order-md-1">
+                        <img class="avatar" src="./download/percenter/logo.png" alt="Image Description"
+                            style="width: 7rem; height: auto; border-radius: 0">
+                        <h1>Một chút thông tin về mình</h1>
+                        <!-- Blockquote -->
+                        <p class="lead">Chào mừng bạn đến với The 2-Percenter. Mình là Đạt. Mình xuất thân trong lĩnh
+                            vực nghiên cứu
+                            vật lý, nhưng lại rất là đam mê kinh doanh.</p>
+                        <p class="lead"> Năm 2019, sau 2 năm bước chân vào lĩnh vực nghiên cứu, mình nhận ra rằng trong
+                            thời đại này, một nguồn thu nhập là không đủ để thực hiện hết những dự định trong tương lai
+                            của mình.
+                            Vì thế, mình bắt đầu mày mò kinh doanh online.</p>
+                        <p class="lead">May mắn thay, mình có cơ may gặp được những người thầy đã có nhiều thành công
+                            trong kinh doanh và được họ dìu dắt từng bước đi đầu tiên. Nhờ vậy, mình có thể bắt đầu một
+                            kinh doanh với nguồn vốn ít ỏi, kinh nghiệm gần bằng không. Sau vài năm thì kinh doanh của
+                            mình đã hoạt động ở cả Bắc Mỹ và Việt Nam.
+                        </p>
+                        <figcaption class="blockquote-footer">
+                            Dat Tran
+                            <span class="blockquote-footer-source">Author</span>
+                        </figcaption>
+                        <!-- End Blockquote -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container content-space-2 content-space-lg-3"
+            style="padding-top: 0px!important; padding-bottom: 20px!important">
+            <!-- Heading -->
+            <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+                <h2>Nếu bạn thích đọc các bài viết....</h2>
+                <p>Bạn có thể tham khảo các bài viết chia sẻ kinh nghiệm của mình trong lĩnh vực Social Media Marketing
+                    & Online Business</p>
+            </div>
+            <!-- End Heading -->
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+
+                <div class="col mb-5">
+                    <!-- Card -->
+                    <div class="card h-100">
+                        <img class="card-img-top" src="./download/Preview - Bootstrap Themes_files/img17.jpg"
+                            alt="Image Description">
+
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <img class="avatar avatar-lg avatar-4x3"
+                                    src="./download/Preview - Bootstrap Themes_files/mapbox.svg" alt="Logo">
+                            </div>
+                            <p class="card-text">Mapbox trao quyền cho các nhà tiếp thị tạo bảng điều khiển tiếp thị kỹ
+                                thuật số một cách dễ dàng và chia sẻ chúng với nhóm của họ.</p>
+                        </div>
+
+                        <div class="card-footer pt-0">
+                            <a class="card-link" href="#">Đọc thêm
+                                <i class="bi-chevron-right small ms-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col mb-5">
+                    <!-- Card -->
+                    <div class="card h-100">
+                        <img class="card-img-top" src="./download/Preview - Bootstrap Themes_files/img16.jpg"
+                            alt="Image Description">
+
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <img class="avatar avatar-lg avatar-4x3"
+                                    src="./download/Preview - Bootstrap Themes_files/forbes.svg" alt="Logo">
+                            </div>
+                            <p class="card-text">Nhiệm vụ của Netflix là tạo ra một hành tinh được vận hành bởi mặt
+                                trời. Để đạt được mục tiêu này, họ cần tìm cách làm cho năng lượng mặt trời trở nên đơn
+                                giản.</p>
+                        </div>
+
+                        <div class="card-footer pt-0">
+                            <a class="card-link" href="#">Đọc thêm
+                                <i class="bi-chevron-right small ms-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col mb-5">
+                    <!-- Card -->
+                    <div class="card h-100">
+                        <img class="card-img-top" src="./download/Preview - Bootstrap Themes_files/img14.jpg"
+                            alt="Image Description">
+
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <img class="avatar avatar-lg avatar-4x3"
+                                    src="./download/Preview - Bootstrap Themes_files/business-insider.svg" alt="Logo">
+                            </div>
+                            <p class="card-text">Front Projects đã được chứng minh là công cụ theo dõi lỗi và theo dõi
+                                dự án dựa trên đám mây hiệu quả nhất.</p>
+                        </div>
+
+                        <div class="card-footer pt-0">
+                            <a class="card-link"
+                                href="https://htmlstream.com/preview/front-v4.3.1/page-customer-story.html">Đọc thêm
+                                <i class="bi-chevron-right small ms-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+
+            </div>
+            <!-- End Row -->
+
+            <div class="text-center">
+                <a class="btn btn-outline-primary" href="#">Xem thêm</a>
+            </div>
+        </div>
+
+        <div class="container content-space-2 content-space-t-lg-4 content-space-b-lg-3 bg-light">
+            <!-- Heading -->
+            <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-7">
+                <h2>Video hướng dẫn mới nhất</h2>
+                <p>Video chia sẻ kiến thức về kinh doanh, đầu tư & tài chính cá nhân.</p>
+            </div>
+            <!-- End Heading -->
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+                <div class="col mb-5">
+                    <div class="card">
+                        <iframe style="height: 13em" src="https://www.youtube.com/embed/RnaVt-IYlzI"
+                            title="VLOG#14: Đừng Theo Đuổi Đam Mê Nữa" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- End Col -->
+
+                <div class="col mb-5">
+                    <div class="card">
+                        <iframe style="height: 13em" src="https://www.youtube.com/embed/ivwCl2_qw9A"
+                            title="VLOG #12: Dùng social media ảnh hưởng đến sự tự tin, hình ảnh bản thân?"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- End Col -->
+
+                <div class="col mb-5">
+                    <div class="card">
+                        <iframe style="height: 13em" src="https://www.youtube.com/embed/eh4-yyedAtU"
+                            title="VLOG #11: Làm Sao Để Tăng Chất Lượng Các Mối Quan Hệ" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+
+            <div class="text-center">
+                <a class="btn btn-outline-primary" href="#">Xem thêm <i class="bi-chevron-right small ms-1"></i></a>
+            </div>
+        </div>
+
+        <div class="container content-space-1 content-space-lg-1">
+            <div class="w-md-75 w-lg-50 text-center mx-md-auto">
+                <div class="row justify-content-lg-between">
+                    <!-- Heading -->
+                    <div class="mb-5">
+                        <h2>Nhận ngay thông tin khóa học</h2>
+                    </div>
+                    <!-- End Heading -->
+
+                    <form>
+                        <!-- Input Card -->
+                        <div class="input-card input-card-sm border mb-3">
+                            <div class="input-card-form">
+                                <label for="subscribeForm" class="form-label visually-hidden">Nhập email</label>
+                                <input type="text" class="form-control form-control-lg" id="subscribeForm"
+                                    placeholder="Nhập email" aria-label="Enter email">
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg">Nhận hướng dẫn</button>
+                        </div>
+                        <!-- End Input Card -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark">
+        <div class="container pb-1 pb-lg-5">
+          <div class="row content-space-t-2">
+            <div class="col-lg-3 mb-7 mb-lg-0">
+              <!-- Logo -->
+              <div class="mb-5">
+                <a class="navbar-brand" href="#" aria-label="Space">
+                  <img class="navbar-brand-logo" src="./download/Percenter/logo.png" alt="Logo">
+                </a>
+              </div>
+              <div class="col-sm-auto">
+                <!-- Socials -->
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item">
+                    <a class="btn btn-soft-light btn-xs btn-icon" href="#">
+                      <i class="bi-facebook"></i>
+                    </a>
+                  </li>
+      
+                  <li class="list-inline-item">
+                    <a class="btn btn-soft-light btn-xs btn-icon" href="#">
+                      <i class="bi-google"></i>
+                    </a>
+                  </li>
+      
+                  <li class="list-inline-item">
+                    <a class="btn btn-soft-light btn-xs btn-icon" href="#">
+                      <i class="bi-twitter"></i>
+                    </a>
+                  </li>
+      
+                  <li class="list-inline-item">
+                    <a class="btn btn-soft-light btn-xs btn-icon" href="#">
+                      <i class="bi-github"></i>
+                    </a>
+                  </li>
+                </ul>
+                <!-- End Socials -->
+              </div>
+              <!-- End Logo -->
+            </div>
+            <!-- End Col -->
+    
+            <div class="col-sm mb-7 mb-sm-0">
+              <h5 class="text-white mb-3">Social network</h5>
+    
+              <!-- List -->
+              <ul class="list-unstyled list-py-1 mb-0">
+                <li><a class="link-sm link-light" href="#"><i class="bi-facebook"></i>&nbsp;Facebook</a></li>
+                <li><a class="link-sm link-light" href="#"><i class="bi-instagram"></i>&nbsp;Instagram</a></li>
+                <li><a class="link-sm link-light" href="#"><i class="bi-twitter"></i>&nbsp;Twitter</a></li>
+              </ul>
+              <!-- End List -->
+            </div>
+            <!-- End Col -->
+    
+            <div class="col-sm mb-7 mb-sm-0">
+              <h5 class="text-white mb-3">Community</h5>
+    
+              <!-- List -->
+              <ul class="list-unstyled list-py-1 mb-0">
+                <li><a class="link-sm link-light" href="#"><i class="bi-newspaper"></i>&nbsp; Tâm sự Freelance </a></li>
+                <li><a class="link-sm link-light" href="#"><i class="bi-tiktok"></i>&nbsp; Tiktok Channel Building <i class="bi-box-arrow-up-right small ms-1"></i></a></li>                
+                <li><a class="link-sm link-light" href="#"><i class="bi-record-circle-fill"></i>&nbsp; Full Stack Marketing </a></li>
+              </ul>
+              <!-- End List -->
+            </div>
+            <!-- End Col -->
+    
+            <div class="col-sm mb-7 mb-sm-0">
+              <h5 class="text-white mb-3">Online Course</h5>
+    
+              <!-- List -->
+              <ul class="list-unstyled list-py-1 mb-0">
+                <li><a class="link-sm link-light" href="#"><i class="bi-check-circle-fill"></i>&nbsp; Content Writing Course </a></li>
+                <li><a class="link-sm link-light" href="#"><i class="bi-bookmark-fill"></i>&nbsp; Inbound Marketing Course </a></li>
+                <li><a class="link-sm link-light" href="#"><i class="bi-caret-right-square-fill"></i>&nbsp; Inbound Marketing Course </a></li>
+              </ul>
+              <!-- End List -->
+            </div>
+            <!-- End Col -->
+    
+            <div class="col-sm">
+              <h5 class="text-white mb-3">Contact</h5>
+    
+              <!-- List -->
+              <ul class="list-unstyled list-py-1 mb-5">
+                <li><a class="link-sm link-light" href="#"><i class="bi-geo-alt-fill me-1"></i> 153 Williamson Plaza, Maggieberg</a></li>
+                <li><a class="link-sm link-light" href="tel:1-062-109-9222"><i class="bi-telephone-inbound-fill me-1"></i> +1 (062) 109-9222</a></li>
+              </ul>
+              <!-- End List -->
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+      </footer>
+    <!-- ========== END MAIN CONTENT ========== -->
+
+    <!-- ========== SECONDARY CONTENTS ========== -->
+    <!-- Go To -->
+    <a class="js-go-to go-to position-fixed animated fadeOutDown hs-go-to-prevent-event" href="javascript:;"
+        style="visibility: hidden; right: 2rem;" data-hs-go-to-options="{
+       &quot;offsetTop&quot;: 700,
+       &quot;position&quot;: {
+         &quot;init&quot;: {
+           &quot;right&quot;: &quot;2rem&quot;
+         },
+         &quot;show&quot;: {
+           &quot;bottom&quot;: &quot;2rem&quot;
+         },
+         &quot;hide&quot;: {
+           &quot;bottom&quot;: &quot;-2rem&quot;
+         }
+       }
+     }">
+        <i class="bi-chevron-up"></i>
+    </a>
+    <!-- ========== END SECONDARY CONTENTS ========== -->
+
+    <!-- JS Implementing Plugins -->
+    <script src="download/PRACTICE 1_files/vendor.min.js.download"></script>
+
+    <!-- JS Front -->
+    <script src="download/PRACTICE 1_files/theme.min.js.download"></script>
+    <!-- JS Plugins Init. -->
+    <script>
+        (function () {
+            // INITIALIZATION OF MEGA MENU
+            // =======================================================
+            new HSMegaMenu('.js-mega-menu', {
+                desktop: {
+                    position: 'left'
+                }
+            })
+
+
+            // INITIALIZATION OF SHOW ANIMATIONS
+            // =======================================================
+            new HSShowAnimation('.js-animation-link')
+
+
+            // INITIALIZATION OF BOOTSTRAP DROPDOWN
+            // =======================================================
+            HSBsDropdown.init()
+
+
+            // INITIALIZATION OF GO TO
+            // =======================================================
+            new HSGoTo('.js-go-to')
+
+            // INITIALIZATION OF TEXT ANIMATION (TYPING)
+            // =======================================================
+            HSCore.components.HSTyped.init('.js-typedjs')
+
+        })()
+    </script>
+
+</body>
+
+</html>

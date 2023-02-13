@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home - Dat Tran</title>
+    <link rel="shortcut icon" href="https://htmlstream.com/preview/front-v4.3.1/favicon.ico">
+    <!-- Font -->
+    <link href="download/PRACTICE 1_files/css2" rel="stylesheet">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="download/PRACTICE 1_files/vendor.min.css">
+    <link rel="stylesheet" href="download/PRACTICE 1_files/bootstrap-icons.css">
+    <link rel="stylesheet" href="download/PRACTICE 1_files/theme.min.css">
+
+    <style class="fslightbox-styles">
+        .fslightbox-absoluted {
+            position: absolute;
+            top: 0;
+            left: 0
+        }
+
+        .fslightbox-fade-in {
+            animation: fslightbox-fade-in .3s cubic-bezier(0, 0, .7, 1)
+        }
+
+        .fslightbox-fade-out {
+            animation: fslightbox-fade-out .3s ease
+        }
+
+        .fslightbox-fade-in-strong {
+            animation: fslightbox-fade-in-strong .3s cubic-bezier(0, 0, .7, 1)
+        }
+
+        .fslightbox-fade-out-strong {
+            animation: fslightbox-fade-out-strong .3s ease
+        }
+
+        @keyframes fslightbox-fade-in {
+            from {
+                opacity: .65
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fslightbox-fade-out {
+            from {
+                opacity: .35
+            }
+
+            to {
+                opacity: 0
+            }
+        }
+
+        @keyframes fslightbox-fade-in-strong {
+            from {
+                opacity: .3
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fslightbox-fade-out-strong {
+            from {
+                opacity: 1
+            }
+
+            to {
+                opacity: 0
+            }
+        }
+
+        .fslightbox-cursor-grabbing {
+            cursor: grabbing
+        }
+
+        .fslightbox-full-dimension {
+            width: 100%;
+            height: 100%
+        }
+
+        .fslightbox-open {
+            overflow: hidden;
+            height: 100%
+        }
+
+        .fslightbox-flex-centered {
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .fslightbox-opacity-0 {
+            opacity: 0 !important
+        }
+
+        .fslightbox-opacity-1 {
+            opacity: 1 !important
+        }
+
+        .fslightbox-scrollbarfix {
+            padding-right: 17px
+        }
+
+        .fslightbox-transform-transition {
+            transition: transform .3s
+        }
+
+        .fslightbox-container {
+            font-family: Arial, sans-serif;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: linear-gradient(rgba(30, 30, 30, .9), #000 1810%);
+            touch-action: pinch-zoom;
+            z-index: 1000000000;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        .fslightbox-container * {
+            box-sizing: border-box
+        }
+
+        .fslightbox-svg-path {
+            transition: fill .15s ease;
+            fill: #ddd
+        }
+
+        .fslightbox-nav {
+            height: 45px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0
+        }
+
+        .fslightbox-slide-number-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 100%;
+            font-size: 15px;
+            color: #d7d7d7;
+            z-index: 0;
+            max-width: 55px;
+            text-align: left
+        }
+
+        .fslightbox-slide-number-container .fslightbox-flex-centered {
+            height: 100%
+        }
+
+        .fslightbox-slash {
+            display: block;
+            margin: 0 5px;
+            width: 1px;
+            height: 12px;
+            transform: rotate(15deg);
+            background: #fff
+        }
+
+        .fslightbox-toolbar {
+            position: absolute;
+            z-index: 3;
+            right: 0;
+            top: 0;
+            height: 100%;
+            display: flex;
+            background: rgba(35, 35, 35, .65)
+        }
+
+        .fslightbox-toolbar-button {
+            height: 100%;
+            width: 45px;
+            cursor: pointer
+        }
+
+        .fslightbox-toolbar-button:hover .fslightbox-svg-path {
+            fill: #fff
+        }
+
+        .fslightbox-slide-btn-container {
+            display: flex;
+            align-items: center;
+            padding: 12px 12px 12px 6px;
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+            z-index: 3;
+            transform: translateY(-50%)
+        }
+
+        @media (min-width:476px) {
+            .fslightbox-slide-btn-container {
+                padding: 22px 22px 22px 6px
+            }
+        }
+
+        @media (min-width:768px) {
+            .fslightbox-slide-btn-container {
+                padding: 30px 30px 30px 6px
+            }
+        }
+
+        .fslightbox-slide-btn-container:hover .fslightbox-svg-path {
+            fill: #f1f1f1
+        }
+
+        .fslightbox-slide-btn {
+            padding: 9px;
+            font-size: 26px;
+            background: rgba(35, 35, 35, .65)
+        }
+
+        @media (min-width:768px) {
+            .fslightbox-slide-btn {
+                padding: 10px
+            }
+        }
+
+        @media (min-width:1600px) {
+            .fslightbox-slide-btn {
+                padding: 11px
+            }
+        }
+
+        .fslightbox-slide-btn-container-previous {
+            left: 0
+        }
+
+        @media (max-width:475.99px) {
+            .fslightbox-slide-btn-container-previous {
+                padding-left: 3px
+            }
+        }
+
+        .fslightbox-slide-btn-container-next {
+            right: 0;
+            padding-left: 12px;
+            padding-right: 3px
+        }
+
+        @media (min-width:476px) {
+            .fslightbox-slide-btn-container-next {
+                padding-left: 22px
+            }
+        }
+
+        @media (min-width:768px) {
+            .fslightbox-slide-btn-container-next {
+                padding-left: 30px
+            }
+        }
+
+        @media (min-width:476px) {
+            .fslightbox-slide-btn-container-next {
+                padding-right: 6px
+            }
+        }
+
+        .fslightbox-down-event-detector {
+            position: absolute;
+            z-index: 1
+        }
+
+        .fslightbox-slide-swiping-hoverer {
+            z-index: 4
+        }
+
+        .fslightbox-invalid-file-wrapper {
+            font-size: 22px;
+            color: #eaebeb;
+            margin: auto
+        }
+
+        .fslightbox-video {
+            object-fit: cover
+        }
+
+        .fslightbox-youtube-iframe {
+            border: 0
+        }
+
+        .fslightbox-loader {
+            display: block;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 67px;
+            height: 67px
+        }
+
+        .fslightbox-loader div {
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            width: 54px;
+            height: 54px;
+            margin: 6px;
+            border: 5px solid;
+            border-color: #999 transparent transparent transparent;
+            border-radius: 50%;
+            animation: fslightbox-loader 1.2s cubic-bezier(.5, 0, .5, 1) infinite
+        }
+
+        .fslightbox-loader div:nth-child(1) {
+            animation-delay: -.45s
+        }
+
+        .fslightbox-loader div:nth-child(2) {
+            animation-delay: -.3s
+        }
+
+        .fslightbox-loader div:nth-child(3) {
+            animation-delay: -.15s
+        }
+
+        @keyframes fslightbox-loader {
+            0% {
+                transform: rotate(0)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        .fslightbox-source {
+            position: relative;
+            z-index: 2;
+            opacity: 0
+        }
+    </style>
+    <script src="download/PRACTICE 1_files/clipboard.min.js.download"></script>
+    <script src="https://kit.fontawesome.com/3ea0606e68.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="navbar navbar-expand-lg navbar-end navbar-light">
+
+        <div class="container">
+            <nav class="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
+                <!-- Default Logo -->
+                <a class="navbar-brand" href="#" aria-label="Front">
+                    <img class="navbar-brand-logo" src="download/PRACTICE 1_files/logo.svg" alt="Logo">
+                </a>
+                <!-- End Default Logo -->
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-default">
+                        <i class="bi-list"></i>
+                    </span>
+                    <span class="navbar-toggler-toggled">
+                        <i class="bi-x"></i>
+                    </span>
+                </button>
+                <!-- End Toggler -->
+
+                <!-- Collapse -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Trang chủ</a>
+                        </li>
+
+                        <!-- Dropdown -->
+                        <li class="hs-has-sub-menu nav-item">
+                            <a id="listingsDropdown" class="hs-mega-menu-invoker nav-link dropdown-toggle "
+                                href="https://htmlstream.com/preview/front-v4.3.1/demo-jobs/index.html#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Khóa học</a>
+                            <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated fadeOut"
+                                aria-labelledby="listingsDropdown"
+                                style="min-width: 14rem; animation-duration: 300ms; display: none;">
+                                <a class="dropdown-item " href="#">Khóa học
+                                    1</a>
+                                <a class="dropdown-item " href="#">Khóa học
+                                    2</a>
+                            </div>
+                        </li>
+                        <!-- End Dropdown -->
+
+                        <!-- Dropdown -->
+                        <li class="hs-has-sub-menu nav-item">
+                            <a id="pagesDropdown" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Bài viết</a>
+                            <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated fadeOut"
+                                aria-labelledby="listingsDropdown"
+                                style="min-width: 14rem; animation-duration: 300ms; display: none;">
+                                <a class="dropdown-item " href="#">Blog
+                                    1</a>
+                                <a class="dropdown-item " href="#">Blog
+                                    2</a>
+                                <a class="dropdown-item " href="#">Blog
+                                    3</a>
+                                <a class="dropdown-item " href="#">Blog
+                                    4</a>
+                            </div>
+                        </li>
+                        <!-- End Dropdown -->
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Về tôi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary btn-transition" href="#">Đăng ký
+                                ngay</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Collapse -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== END HEADER ========== -->
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="content" role="main">
+        <!-- Card Grid -->
+        <div class="container content-space-t-3 content-space-b-2 content-space-b-lg-3">
+
+            <div class="row mb-7">
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <!-- Card -->
+                    <div class="card h-100">
+                        <div class="shape-container">
+                            <img class="card-img-top" src="./download/Preview - Bootstrap Themes_2_files/img1.jpg" alt="Image Description">
+
+                            <!-- Shape -->
+                            <div class="shape shape-bottom zi-1" style="margin-bottom: -.25rem">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+                                    <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
+                                </svg>
+                            </div>
+                            <!-- End Shape -->
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <a class="text-dark"
+                                    href="https://htmlstream.com/preview/front-v4.3.1/blog-article.html">Better is when
+                                    everything works together</a>
+                            </h3>
+
+                            <p class="card-text">Learn how your Google devices can do more.</p>
+                        </div>
+                        <!-- End Card Body -->
+
+                        <!-- Card Footer -->
+                        <div class="card-footer">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar-group avatar-group-xs">
+                                    <a class="avatar avatar-xs avatar-circle"
+                                        href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Nataly Gaga"
+                                        data-bs-original-title="Nataly Gaga">
+                                        <img class="avatar-img" src="./download/Preview - Bootstrap Themes_2_files/img9.jpg" alt="Image Description">
+                                    </a>
+                                    <a class="avatar avatar-xs avatar-circle"
+                                        href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Emily Milda"
+                                        data-bs-original-title="Emily Milda">
+                                        <img class="avatar-img" src="./download/Preview - Bootstrap Themes_2_files/img8.jpg" alt="Image Description">
+                                    </a>
+                                </div>
+
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-end">
+                                        <p class="card-text">July 15</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card Footer -->
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <!-- Card -->
+                    <div class="card bg-dark h-100"
+                        style="background-image: url(./assets/svg/components/wave-pattern-light.svg);">
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <div class="mb-5">
+                                <span class="badge bg-primary">Featured</span>
+                            </div>
+
+                            <h3 class="card-title">
+                                <a class="text-white"
+                                    href="https://htmlstream.com/preview/front-v4.3.1/blog-article.html">Announcing
+                                    Front Tutorials: Master Adobe Ai - Part II</a>
+                            </h3>
+
+                            <p class="text-white-70">A new tutorial to make it easier to master Adobe Ai.</p>
+                        </div>
+                        <!-- End Card Body -->
+
+                        <!-- Card Footer -->
+                        <div class="card-footer">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar-group avatar-group-xs">
+                                    <a class="avatar avatar-xs avatar-circle"
+                                        href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Aaron Larsson"
+                                        data-bs-original-title="Aaron Larsson">
+                                        <img class="avatar-img" src="./download/Preview - Bootstrap Themes_2_files/img3.jpg" alt="Image Description">
+                                    </a>
+                                </div>
+
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-end">
+                                        <p class="card-text text-white-70">July 15</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card Footer -->
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <!-- Card -->
+                    <div class="card h-100">
+                        <div class="shape-container">
+                            <img class="card-img-top" src="./download/Preview - Bootstrap Themes_2_files/img3(1).jpg" alt="Image Description">
+
+                            <!-- Shape -->
+                            <div class="shape shape-bottom zi-1" style="margin-bottom: -.25rem">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+                                    <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
+                                </svg>
+                            </div>
+                            <!-- End Shape -->
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <a class="text-dark"
+                                    href="https://htmlstream.com/preview/front-v4.3.1/blog-article.html">Should You Buy
+                                    An Apple Pencil?</a>
+                            </h3>
+
+                            <p class="card-text">The Apple Pencil is an expensive device that comes with some
+                                interesting features, but not everyone needs them.</p>
+                        </div>
+                        <!-- End Card Body -->
+
+                        <!-- Card Footer -->
+                        <div class="card-footer">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar-group avatar-group-xs">
+                                    <a class="avatar avatar-xs avatar-circle"
+                                        href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Hanna Wolfe"
+                                        data-bs-original-title="Hanna Wolfe">
+                                        <img class="avatar-img" src="./download/Preview - Bootstrap Themes_2_files/img10.jpg" alt="Image Description">
+                                    </a>
+                                    <a class="avatar avatar-xs avatar-circle"
+                                        href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" aria-label="John O&#39;nolan"
+                                        data-bs-original-title="John O&#39;nolan">
+                                        <img class="avatar-img" src="./download/Preview - Bootstrap Themes_2_files/img6.jpg" alt="Image Description">
+                                    </a>
+                                </div>
+
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-end">
+                                        <p class="card-text">July 15</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card Footer -->
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <!-- Card -->
+                    <div class="card h-100">
+                        <div class="shape-container">
+                            <img class="card-img-top" src="./download/Preview - Bootstrap Themes_2_files/img4(1).jpg" alt="Image Description">
+
+                            <!-- Shape -->
+                            <div class="shape shape-bottom zi-1" style="margin-bottom: -.25rem">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+                                    <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
+                                </svg>
+                            </div>
+                            <!-- End Shape -->
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <a class="text-dark"
+                                    href="https://htmlstream.com/preview/front-v4.3.1/blog-article.html">I don't want to
+                                    switch from Android to iPhone because Apple's ecosystem is too good</a>
+                            </h3>
+
+                            <p class="card-text">Apple's ecosystem is second to none, and it comes with great
+                                functionality.</p>
+                        </div>
+                        <!-- End Card Body -->
+
+                        <!-- Card Footer -->
+                        <div class="card-footer">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar-group avatar-group-xs">
+                                    <a class="avatar avatar-xs avatar-circle"
+                                        href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Hanna Wolfe"
+                                        data-bs-original-title="Hanna Wolfe">
+                                        <img class="avatar-img" src="./download/Preview - Bootstrap Themes_2_files/img10.jpg" alt="Image Description">
+                                    </a>
+                                    <a class="avatar avatar-xs avatar-circle"
+                                        href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" aria-label="John O&#39;nolan"
+                                        data-bs-original-title="John O&#39;nolan">
+                                        <img class="avatar-img" src="./download/Preview - Bootstrap Themes_2_files/img6.jpg" alt="Image Description">
+                                    </a>
+                                </div>
+
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-end">
+                                        <p class="card-text">July 15</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card Footer -->
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <!-- Card -->
+                    <div class="card h-100">
+                        <div class="shape-container">
+                            <img class="card-img-top" src="./download/Preview - Bootstrap Themes_2_files/img5.jpg" alt="Image Description">
+
+                            <!-- Shape -->
+                            <div class="shape shape-bottom zi-1" style="margin-bottom: -.25rem">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+                                    <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
+                                </svg>
+                            </div>
+                            <!-- End Shape -->
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <a class="text-dark"
+                                    href="https://htmlstream.com/preview/front-v4.3.1/blog-article.html">This Watch gym
+                                    partnerships give you perks for working out</a>
+                            </h3>
+
+                            <p class="card-text">For a lot of people these days, watch matters.</p>
+                        </div>
+                        <!-- End Card Body -->
+
+                        <!-- Card Footer -->
+                        <div class="card-footer">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar-group avatar-group-xs">
+                                    <a class="avatar avatar-xs avatar-circle"
+                                        href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Nataly Gaga"
+                                        data-bs-original-title="Nataly Gaga">
+                                        <img class="avatar-img" src="./download/Preview - Bootstrap Themes_2_files/img9.jpg" alt="Image Description">
+                                    </a>
+                                </div>
+
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-end">
+                                        <p class="card-text">July 15</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card Footer -->
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <!-- Card -->
+                    <div class="card h-100">
+                        <div class="shape-container">
+                            <img class="card-img-top" src="./download/Preview - Bootstrap Themes_2_files/img6(1).jpg" alt="Image Description">
+
+                            <!-- Shape -->
+                            <div class="shape shape-bottom zi-1" style="margin-bottom: -.25rem">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+                                    <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
+                                </svg>
+                            </div>
+                            <!-- End Shape -->
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <a class="text-dark"
+                                    href="https://htmlstream.com/preview/front-v4.3.1/blog-article.html">Announcing
+                                    Front Strategies: Ready-to-use rules</a>
+                            </h3>
+
+                            <p class="card-text">Today we're launching a new product to make it easier to get started
+                                with Front.</p>
+                        </div>
+                        <!-- End Card Body -->
+
+                        <!-- Card Footer -->
+                        <div class="card-footer">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar-group avatar-group-xs">
+                                    <a class="avatar avatar-xs avatar-circle"
+                                        href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Hanna Wolfe"
+                                        data-bs-original-title="Hanna Wolfe">
+                                        <img class="avatar-img" src="./download/Preview - Bootstrap Themes_2_files/img10.jpg" alt="Image Description">
+                                    </a>
+                                </div>
+
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-end">
+                                        <p class="card-text">July 15</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card Footer -->
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <!-- Card -->
+                    <div class="card h-100">
+                        <div class="shape-container">
+                            <img class="card-img-top" src="./download/Preview - Bootstrap Themes_2_files/img7.jpg" alt="Image Description">
+
+                            <!-- Shape -->
+                            <div class="shape shape-bottom zi-1" style="margin-bottom: -.25rem">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+                                    <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
+                                </svg>
+                            </div>
+                            <!-- End Shape -->
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <a class="text-dark"
+                                    href="https://htmlstream.com/preview/front-v4.3.1/blog-article.html">Drone Company
+                                    PrecisionHawk Names New CEO</a>
+                            </h3>
+
+                            <p class="card-text">Drone company PrecisionHawk has survived 10 years in the industry.</p>
+                        </div>
+                        <!-- End Card Body -->
+
+                        <!-- Card Footer -->
+                        <div class="card-footer">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar-group avatar-group-xs">
+                                    <a class="avatar avatar-xs avatar-circle"
+                                        href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Aaron Larsson"
+                                        data-bs-original-title="Aaron Larsson">
+                                        <img class="avatar-img" src="./download/Preview - Bootstrap Themes_2_files/img3.jpg" alt="Image Description">
+                                    </a>
+                                    <a class="avatar avatar-xs avatar-circle"
+                                        href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Hanna Wolfe"
+                                        data-bs-original-title="Hanna Wolfe">
+                                        <img class="avatar-img" src="./download/Preview - Bootstrap Themes_2_files/img10.jpg" alt="Image Description">
+                                    </a>
+                                </div>
+
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-end">
+                                        <p class="card-text">July 15</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card Footer -->
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <!-- Card -->
+                    <div class="card h-100">
+                        <div class="shape-container">
+                            <img class="card-img-top" src="./download/Preview - Bootstrap Themes_2_files/img8(1).jpg" alt="Image Description">
+
+                            <!-- Shape -->
+                            <div class="shape shape-bottom zi-1" style="margin-bottom: -.25rem">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+                                    <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
+                                </svg>
+                            </div>
+                            <!-- End Shape -->
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <a class="text-dark"
+                                    href="https://htmlstream.com/preview/front-v4.3.1/blog-article.html">Should Product
+                                    Owners think like entrepreneurs?</a>
+                            </h3>
+
+                            <p class="card-text">Front is a financial technology company. We build products. We do it
+                                fast and we do it well.</p>
+                        </div>
+                        <!-- End Card Body -->
+
+                        <!-- Card Footer -->
+                        <div class="card-footer">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar-group avatar-group-xs">
+                                    <a class="avatar avatar-xs avatar-circle"
+                                        href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Emily Milda"
+                                        data-bs-original-title="Emily Milda">
+                                        <img class="avatar-img" src="./download/Preview - Bootstrap Themes_2_files/img7(1).jpg" alt="Image Description">
+                                    </a>
+                                    <a class="avatar avatar-xs avatar-circle"
+                                        href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" aria-label="John O&#39;nolan"
+                                        data-bs-original-title="John O&#39;nolan">
+                                        <img class="avatar-img" src="./download/Preview - Bootstrap Themes_2_files/img4.jpg" alt="Image Description">
+                                    </a>
+                                </div>
+
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-end">
+                                        <p class="card-text">July 15</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card Footer -->
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <!-- Card -->
+                    <div class="card h-100">
+                        <div class="shape-container">
+                            <img class="card-img-top" src="./download/Preview - Bootstrap Themes_2_files/img2(1).jpg" alt="Image Description">
+
+                            <!-- Shape -->
+                            <div class="shape shape-bottom zi-1" style="margin-bottom: -.25rem">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+                                    <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
+                                </svg>
+                            </div>
+                            <!-- End Shape -->
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <a class="text-dark"
+                                    href="https://htmlstream.com/preview/front-v4.3.1/blog-article.html">What is KYC and
+                                    why do we need it</a>
+                            </h3>
+
+                            <p class="card-text">You've read about our app, it came up on your news feed and your mate
+                                sent you an invite to sign up.</p>
+                        </div>
+                        <!-- End Card Body -->
+
+                        <!-- Card Footer -->
+                        <div class="card-footer">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar-group avatar-group-xs">
+                                    <a class="avatar avatar-xs avatar-circle"
+                                        href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Emily Milda"
+                                        data-bs-original-title="Emily Milda">
+                                        <img class="avatar-img" src="./download/Preview - Bootstrap Themes_2_files/img7(1).jpg" alt="Image Description">
+                                    </a>
+                                </div>
+
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-end">
+                                        <p class="card-text">July 15</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card Footer -->
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+
+            <!-- Pagination -->
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-end">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#"
+                            aria-label="Previous">
+                            <span aria-hidden="true">
+                                <i class="bi-chevron-double-left small"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link"
+                            href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#">1</a></li>
+                    <li class="page-item"><a class="page-link"
+                            href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#">2</a></li>
+                    <li class="page-item"><a class="page-link"
+                            href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#">3</a></li>
+                    <li class="page-item disabled"><a class="page-link"
+                            href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#">...</a></li>
+                    <li class="page-item"><a class="page-link"
+                            href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="https://htmlstream.com/preview/front-v4.3.1/blog-newsroom.html#"
+                            aria-label="Next">
+                            <span aria-hidden="true">
+                                <i class="bi-chevron-double-right small"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Pagination -->
+        </div>
+        <!-- End Card Grid -->
+    </main>
+
+    <footer class="bg-dark">
+        <div class="container pb-1 pb-lg-5">
+            <div class="row content-space-t-2">
+                <div class="col-lg-3 mb-7 mb-lg-0">
+                    <!-- Logo -->
+                    <div class="mb-5">
+                        <a class="navbar-brand" href="#" aria-label="Space">
+                            <img class="navbar-brand-logo" src="./download/Percenter/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="col-sm-auto">
+                        <!-- Socials -->
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="btn btn-soft-light btn-xs btn-icon" href="#">
+                                    <i class="bi-facebook"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a class="btn btn-soft-light btn-xs btn-icon" href="#">
+                                    <i class="bi-google"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a class="btn btn-soft-light btn-xs btn-icon" href="#">
+                                    <i class="bi-twitter"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a class="btn btn-soft-light btn-xs btn-icon" href="#">
+                                    <i class="bi-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Socials -->
+                    </div>
+                    <!-- End Logo -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm mb-7 mb-sm-0">
+                    <h5 class="text-white mb-3">Social network</h5>
+
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-0">
+                        <li><a class="link-sm link-light" href="#"><i class="bi-facebook"></i>&nbsp;Facebook</a></li>
+                        <li><a class="link-sm link-light" href="#"><i class="bi-instagram"></i>&nbsp;Instagram</a></li>
+                        <li><a class="link-sm link-light" href="#"><i class="bi-twitter"></i>&nbsp;Twitter</a></li>
+                    </ul>
+                    <!-- End List -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm mb-7 mb-sm-0">
+                    <h5 class="text-white mb-3">Community</h5>
+
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-0">
+                        <li><a class="link-sm link-light" href="#"><i class="bi-newspaper"></i>&nbsp; Tâm sự Freelance
+                            </a></li>
+                        <li><a class="link-sm link-light" href="#"><i class="bi-tiktok"></i>&nbsp; Tiktok Channel
+                                Building <i class="bi-box-arrow-up-right small ms-1"></i></a></li>
+                        <li><a class="link-sm link-light" href="#"><i class="bi-record-circle-fill"></i>&nbsp; Full
+                                Stack Marketing </a></li>
+                    </ul>
+                    <!-- End List -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm mb-7 mb-sm-0">
+                    <h5 class="text-white mb-3">Online Course</h5>
+
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-0">
+                        <li><a class="link-sm link-light" href="#"><i class="bi-check-circle-fill"></i>&nbsp; Content
+                                Writing Course </a></li>
+                        <li><a class="link-sm link-light" href="#"><i class="bi-bookmark-fill"></i>&nbsp; Inbound
+                                Marketing Course </a></li>
+                        <li><a class="link-sm link-light" href="#"><i class="bi-caret-right-square-fill"></i>&nbsp;
+                                Inbound Marketing Course </a></li>
+                    </ul>
+                    <!-- End List -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm">
+                    <h5 class="text-white mb-3">Contact</h5>
+
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-5">
+                        <li><a class="link-sm link-light" href="#"><i class="bi-geo-alt-fill me-1"></i> 153 Williamson
+                                Plaza, Maggieberg</a></li>
+                        <li><a class="link-sm link-light" href="tel:1-062-109-9222"><i
+                                    class="bi-telephone-inbound-fill me-1"></i> +1 (062) 109-9222</a></li>
+                    </ul>
+                    <!-- End List -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+        </div>
+    </footer>
+    <!-- ========== END MAIN CONTENT ========== -->
+
+    <!-- ========== SECONDARY CONTENTS ========== -->
+    <!-- Go To -->
+    <a class="js-go-to go-to position-fixed animated fadeOutDown hs-go-to-prevent-event" href="javascript:;"
+        style="visibility: hidden; right: 2rem;" data-hs-go-to-options="{
+       &quot;offsetTop&quot;: 700,
+       &quot;position&quot;: {
+         &quot;init&quot;: {
+           &quot;right&quot;: &quot;2rem&quot;
+         },
+         &quot;show&quot;: {
+           &quot;bottom&quot;: &quot;2rem&quot;
+         },
+         &quot;hide&quot;: {
+           &quot;bottom&quot;: &quot;-2rem&quot;
+         }
+       }
+     }">
+        <i class="bi-chevron-up"></i>
+    </a>
+    <!-- ========== END SECONDARY CONTENTS ========== -->
+
+    <!-- JS Implementing Plugins -->
+    <script src="download/PRACTICE 1_files/vendor.min.js.download"></script>
+
+    <!-- JS Front -->
+    <script src="download/PRACTICE 1_files/theme.min.js.download"></script>
+    <!-- JS Plugins Init. -->
+    <script>
+        (function () {
+            // INITIALIZATION OF MEGA MENU
+            // =======================================================
+            new HSMegaMenu('.js-mega-menu', {
+                desktop: {
+                    position: 'left'
+                }
+            })
+
+
+            // INITIALIZATION OF SHOW ANIMATIONS
+            // =======================================================
+            new HSShowAnimation('.js-animation-link')
+
+
+            // INITIALIZATION OF BOOTSTRAP DROPDOWN
+            // =======================================================
+            HSBsDropdown.init()
+
+
+            // INITIALIZATION OF GO TO
+            // =======================================================
+            new HSGoTo('.js-go-to')
+
+            // INITIALIZATION OF TEXT ANIMATION (TYPING)
+            // =======================================================
+            HSCore.components.HSTyped.init('.js-typedjs')
+
+        })()
+    </script>
+
+</body>
+
+</html>
